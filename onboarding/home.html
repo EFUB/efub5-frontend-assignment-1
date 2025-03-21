@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>유진의 포트폴리오</title>
+    <style>
+        body {
+            font-family: 'Neo둥근모';
+            overflow-y: scroll;
+        }
+
+        header {
+            font-size: 30px;
+            text-align: right; 
+            word-spacing: 5em;
+            margin-right: 10%;
+        }
+
+        img {
+            margin-top: 10%;
+            float: left;
+            width: auto; 
+            height: auto;
+        }
+
+        .typing-effect {
+            font-size: 60px;
+            color:black;
+            overflow: hidden;
+            white-space: nowrap;
+            border-right: 0.15em solid purple; /* 커서 효과 */
+            animation: typing 4s steps(12, end) forwards, blink-caret 0.75s infinite;
+        }
+
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+
+        @keyframes blink-caret {
+            from, to { border-color: transparent; }
+            50% { border-color:purple; }
+        }
+        p{
+            margin-top: 15%;
+        }
+        a{
+            text-decoration-line: none;
+            text-decoration-color:black ;
+        }
+
+        b {
+            font-size: 20px;
+        }
+
+        section {
+            display: inline-block;
+        }
+        hr{
+            width: 100%;
+            
+        }
+        .hr-dashed {
+            border : 0px;
+            border-top: 3px dashed black;
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="home.html">Home˳⁺⁎</a>
+        <a href="about.html">About˳⁺⁎</a>
+        <a href="education.html">Education˳⁺⁎</a>
+        <a href="skill_ability.html">Skill&Ability˳⁺⁎</a>
+    </header>
+ <hr class='hr-dashed'/>
+    <article>
+        <img src="컴고양_1.jpg" alt="컴퓨터 고양이" width="650" height="400">
+    </article>
+    
+    <aside>
+        <p>
+            <span style="font-size: 80px;">LEE YU JIN ⍣ ⋆⋆</span> <br> 
+            <span class="typing-effect">Developer Frontend</span>
+        </p>
+        
+        <section style="font-size: 20px;">
+            <b>
+                E-mail: <a href="mailto:lyj020711@ewhain.net">lyj020711@ewhain.net</a><br>
+                GitHub: <a href="https://github.com/">https://github.com/</a><br>
+                Instagram: whyjin._.711
+            </b>
+        </section>
+    </aside>
+</body>
+</html>
