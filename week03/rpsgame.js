@@ -67,7 +67,7 @@ buttons.forEach(btn => {
 
 
 
-// 초기화 버튼 이벤트
+// 초기화 버튼 
 resetBtn.addEventListener('click', () => {
     userScore = 0;
     computerScore = 0;
