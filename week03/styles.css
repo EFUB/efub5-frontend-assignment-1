@@ -1,0 +1,77 @@
+/* 전체 레이아웃 중앙 정렬 */
+body {
+    font-family: 'arial';
+    text-align: center;
+
+  }
+  
+  /* 점수 & 결과 표시 영역 */
+  #result {
+    margin-top: 50px;
+  }
+  
+  #score {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  #winner {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    color: #444;
+  }
+  
+  /* 인간 & 컴퓨터 이미지 영역 */
+  #players {
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
+  }
+  
+  .player img {
+    margin-top: 20px;
+    width: 200px;
+    height: 200px;
+    border: none;
+  }
+  
+  /* 가위/바위/보 버튼 */
+  #choices {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .choice {
+    padding: 10px 20px;
+
+    font-size: 1rem;
+
+    margin: 0 10px;
+    border: none;
+    background-color: #4a90e2;
+    color: white;
+    border-radius: 8px;;
+  }
+  
+  .choice:hover {
+    background-color: #357ab8;
+  }
+  
+  /* 초기화 버튼 */
+  #reset {
+    margin: 30px auto 0 ;
+    padding: 10px 20px;
+    font-size: 1rem;
+ 
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 8px;
+  }
+  
+  
+  
