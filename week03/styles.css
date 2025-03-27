@@ -38,7 +38,7 @@ body {
     border: none;
   }
   
-  /* 가위/바위/보 버튼 */
+  /* 가위바위보 버튼 */
   #choices {
     margin-top: 40px;
     display: flex;
