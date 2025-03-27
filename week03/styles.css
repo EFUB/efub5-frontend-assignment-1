@@ -57,10 +57,6 @@ body {
     border-radius: 8px;;
   }
   
-  .choice:hover {
-    background-color: #357ab8;
-  }
-  
   /* 초기화 버튼 */
   #reset {
     margin: 30px auto 0 ;
