@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>가위바위보</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="contianer">
+    <!-- 게임 속 위의 문구 -->
+    <section class="notice">
+      <div class="game-info">가위바위보 게임을 시작합니다</div>
+      <div class="score">0 : 0</div>
+    </section>
+    <!-- 게임 진행 section -->
+    <section class="game">
+      <div class="human">  <!-- 사용자 정보 -->
+        <div class="user">나</div>
+        <img src="left.png" class="user-choice">
+      </div>
+      <div class="computer">  <!-- 컴퓨터 정보 -->
+        <div class="user">컴퓨터</div>
+        <img src="right.png" class="computer-choice">
+      </div>
+    </section>
+    <!-- 버튼 -->
+    <section class="choice">  <!-- 가위바위보 버튼 -->
+      <button id="scissor">가위</button>
+      <button id="rock">바위</button>
+      <button id="paper">보</button>
+    </section>
+
+    <section class="reset">  <!-- 초기화 버튼 -->
+      <button id="reset-button">초기화</button>
+    </section>
+
+    <script src="./game.js"></script>
+   </div>
+</body>
+</html>
