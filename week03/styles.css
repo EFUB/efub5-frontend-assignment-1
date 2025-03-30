@@ -1,0 +1,66 @@
+body {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    margin: 0;
+    background-color: #698467;
+  }
+
+  
+  a{
+    font-family: 'Arial', sans-serif;
+    text-align: end;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+  }
+  
+  .container {
+    height:50%;
+    text-align: center;
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    display: flex; /* Flexbox 사용 */
+    flex-direction: column; /* 세로 방향 정렬 */
+    justify-content: center; /* 중앙 정렬 */
+  }
+  .row {
+    display: flex; /* Flexbox 사용 */
+    justify-content: center; /* 중앙 정렬 */
+    margin: 10px 0; /* 위아래 여백 */
+}
+  .buttons {
+    display: flex; /* Flexbox 사용 */
+    flex-direction: column; /* 세로 방향으로 정렬 */
+    align-items: center; /* 중앙 정렬 */
+}
+
+  
+  .buttons button {
+    font-size: 24px;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #f4f3a9;
+  }
+  
+  .result p {
+    font-size: 20px;
+    margin-top: 30px;
+  }
+  .images {
+    display: flex; /* Flexbox 사용 */
+    justify-content: center; /* 중앙 정렬 */
+    margin: 10px 0; /* 위아래 여백 */
+}
+
+.images img {
+    width: 100px; /* 이미지 크기 설정 */
+    height: 100px; /* 이미지 크기 설정 */
+    margin: 0 10px; /* 좌우 여백 */
+}
