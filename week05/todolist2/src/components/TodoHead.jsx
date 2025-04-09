@@ -30,7 +30,7 @@ function TodoHead({ todos }) {
   });
   
 
-  const undoneTasks = useMemo(() => {
+  const undoneTasks = useMemo(() => {      //todos가 바뀔 때만 계산 
     return todos.filter(todo => !todo.done);
   }, [todos]);
   

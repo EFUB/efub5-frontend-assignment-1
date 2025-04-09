@@ -9,11 +9,6 @@ import TodoCreate from './components/TodoCreate';
 import GlobalStyle from './components/GlobalStyle'; 
 
 function App() {
-  const [temp, setTemp] = useState(0); // 임시 상태
-
-  const handleTempChange = () => {
-  setTemp((prev) => prev + 1);
-  };
 
   
 
