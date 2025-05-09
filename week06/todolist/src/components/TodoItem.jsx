@@ -58,7 +58,7 @@ const Text = styled.div.withConfig({
   shouldForwardProp: (prop) => prop !== "done",
 })`
   flex: 1;
-  font-size: 21px;
+  font-size: 17px;
   color: #495057;
   ${(props) =>
     props.done &&
