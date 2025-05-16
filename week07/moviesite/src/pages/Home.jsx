@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from "react";
-import { getMovies } from "../api/movieApi";
+import { getMovies } from "../api/MovieApi";
 import MovieList from '../components/MovieList';
 import styled from "styled-components";
 
