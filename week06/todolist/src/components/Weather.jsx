@@ -27,8 +27,11 @@ const WeatherStyle = styled.div`
   }
 `;
 
+const API_KEY = import.meta.env.VITE_WEATHER_API;
+
 function Weather() {
   const [weather, setWeather] = useState(null);
+  console.log(API_KEY);
 
   // 현재 위치를 가져오는 함수
   useEffect(() => {
@@ -42,7 +45,7 @@ function Weather() {
 
   // weather api 호출
   const getWeather = async (lat, lon) => {
-    let url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=3aa1efa7cc06669539a8e4c263cd10a3`
+    let url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}`;
     let response = await fetch(url);
     let data = await response.json();
     console.log(data);
