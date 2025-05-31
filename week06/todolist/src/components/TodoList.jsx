@@ -9,24 +9,6 @@ const TodoListBlock = styled.div`
   padding-bottom: 48px;
   overflow-y: auto;
 `;
-// 기존 코드 
-/*
-function TodoList({ todos, setTodos }) {
-  return (
-    <TodoListBlock>
-      {todos.map((todo) => (
-        <TodoItem
-          id={todo.id}
-          text={todo.text}
-          done={todo.done}
-          setTodos={setTodos}
-          key={todo.id}
-        />
-      ))}
-    </TodoListBlock>
-  );
-}
-*/
 
 function TodoList({ todos, setTodos }) {
   return (

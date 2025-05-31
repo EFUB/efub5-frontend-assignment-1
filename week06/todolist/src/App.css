@@ -33,3 +33,18 @@
 .read-the-docs {
   color: #888;
 }
+
+.app-container {
+  text-align: right;
+}
+
+.weather-button {
+  display: inline-flex;
+  justify-content: right;
+  max-width: 120px;
+  margin-right: 50px;
+  padding: 3px 10px;
+  color: #3d3b40;
+  border: 1px solid #3d3b40;
+  border-radius: 16px;
+}
