@@ -1,10 +1,12 @@
 //App.js
 import React, { useState, useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 import styled, { createGlobalStyle } from "styled-components";
 import TodoTemplate from "./components/TodoTemplate";
 import TodoHead from "./components/TodoHead";
 import TodoList from "./components/TodoList";
 import TodoCreate from "./components/TodoCreate";
+import './App.css';
 
 const GlobalStyle = createGlobalStyle`
   html, body, #root {
@@ -92,7 +94,9 @@ function App() {
         <TodoTemplate>
           <div>
             <TodoHead todos={todos} />
-            <button className="testButton" onClick={onTesting}>테스트 버튼</button>
+            <div className="app-container">
+            <Link to="/weather"><p className="weather-button">현재 날씨 보기</p></Link>
+            </div>
           </div>
           <TodoList todos={todos} setTodos={setTodos} />
           <TodoCreate todos={todos} setTodos={setTodos} />

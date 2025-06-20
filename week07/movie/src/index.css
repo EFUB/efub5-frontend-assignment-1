@@ -1,0 +1,7 @@
+/* App.jsx에서 Wrapper에 height: 100%를 설정해도 html, body, #root에 height가 설정되어 있지 않으면 적용되지 않는다 */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Playfair Display';
+}
