@@ -59,15 +59,6 @@ const Wrapper = styled.div`
 function App() {
   const[todos, setTodos] = useState([]);
   const isInitialMount = useRef(true); // 첫 마운트인지 체크
-  const [test, setTest] = useState(false);  // 테스트 버튼 생성
-  const onTesting = () => {
-    if (test === true) {
-      setTest(false);
-    }
-    else {
-      setTest(true);
-    }
-  }
 
   useEffect(() => {
     const storedTodos = localStorage.getItem("todos");
@@ -84,6 +75,16 @@ function App() {
     }
     localStorage.setItem("todos", JSON.stringify(todos));
   }, [todos]);
+
+  const [test, setTest] = useState(false);  // 테스트 버튼 생성
+    const onTesting = () => {
+      if (test === true) {
+        setTest(false);
+      }
+      else {
+        setTest(true);
+      }
+    }
 
   return (
     <>

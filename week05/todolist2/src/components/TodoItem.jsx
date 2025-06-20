@@ -68,10 +68,10 @@ const Text = styled.div.withConfig({
 `;
 
 
-function TodoItem({ id, text, done, setTodos }) {
+function TodoItem({ id, text, done, onToggle, onRemove, onEdit }) {
   const[isEditing, setIsEditing] = useState(false);  // 수정하고 있는 상태
   const [editText, setEditText] = useState(text);  // 수정할 text
-  
+  /*
   const onToggle = () => {
     setTodos((prevTodo) => prevTodo.map((todo) => 
       todo.id === id ? {...todo, done: !todo.done } : todo
@@ -86,20 +86,16 @@ function TodoItem({ id, text, done, setTodos }) {
     setEditText(text);  // 현재 텍스트로 초기화
     setIsEditing(true);
   };
-
+  */
   const onSave = () => {
-    if (editText.trim() ==="") {
+    if (editText.trim() ===""){
       alert("내용을 입력하세요.");
       return;
     }
-    setTodos((prevTodos) =>
-      prevTodos.map((todo) =>
-      todo.id === id? {...todo, text: editText} : todo)
-    );
+    onEdit(id, editText);
     setIsEditing(false);
   };
 
- 
   return (
     <TodoItemBlock>
       <CheckCircle done={done} onClick={onToggle}>{ done && <MdDone /> }</CheckCircle>
