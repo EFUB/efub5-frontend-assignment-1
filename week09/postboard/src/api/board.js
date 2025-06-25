@@ -1,15 +1,26 @@
-import axios from "axios";
 
-export const API = axios.create({
-    baseURL: "/boards",
+import axiosInstance from "./axiosInstance"; // 경로는 상황에 맞게 조정해줘!
 
-});
-// 자주 쓰는 baseURL 인스턴스 만들어두기 
+// 게시판 하나 조회
+export const getBoard = (boardId) =>
+  axiosInstance.get(`/boards/${boardId}`);
 
-//서버에 데이터 보내는 post, put은 body에 data 넣어야 함 
-export const getBoard = (boardId) => API.get(`/${boardId}`);
-export const getAllBoards = () => API.get(`/`);
-export const updateBoard = (boardId, data) => API.put(`/${boardId}`, data);
-export const deleteBoard = (boardId) => API.delete(`/${boardId}`);
-export const makeBoard = (data) => API.post(`/`, data);
-export const getBoardPosts = (boardId) => API.get(`/${boardId}/posts`);
+// 게시판 전체 목록 조회
+export const getAllBoards = () =>
+  axiosInstance.get(`/boards`);
+
+// 게시판 생성
+export const makeBoard = (data) =>
+  axiosInstance.post(`/boards`, data);
+
+// 게시판 수정
+export const updateBoard = (boardId, data) =>
+  axiosInstance.put(`/boards/${boardId}`, data);
+
+// 게시판 삭제
+export const deleteBoard = (boardId) =>
+  axiosInstance.delete(`/boards/${boardId}`);
+
+// 게시판에 속한 게시글 목록 가져오기
+export const getBoardPosts = (boardId) =>
+  axiosInstance.get(`/boards/${boardId}/posts`);
