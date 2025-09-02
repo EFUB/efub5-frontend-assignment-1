@@ -7,6 +7,7 @@ import EditPostPage from './pages/EditPostPage';
 import EditBoardPage from './pages/EditBoardPage';
 import CreateBoardPage from './pages/CreateBoardPage';
 import MainPage from './pages/MainPage';
+import SignUpPage from './pages/SignUpPage';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/posts/edit/:postId" element={<EditPostPage />} />
         <Route path="/boards/edit/:boardId" element={<EditBoardPage />} />
         <Route path="/" element={<MainPage/>} />
+        <Route path="/signup" element={<SignUpPage/>}/>
       </Routes>
     </BrowserRouter>
   );

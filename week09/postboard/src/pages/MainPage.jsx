@@ -24,6 +24,7 @@ const MainLink = styled(Link)`
   font-size: 16px;
   text-decoration: none;
   transition: background-color 0.3s ease;
+  margin-top: 30px;
 
   &:hover {
     background-color: #357ab8;
@@ -35,6 +36,7 @@ function MainPage() {
     <MainContainer>
       <Welcome>EFUB 게시판에 오신 걸 환영합니다!</Welcome>
       <MainLink to="/boards">전체 게시판 조회</MainLink>
+      <MainLink to="/signup">회원가입</MainLink>
     </MainContainer>
   );
 }
